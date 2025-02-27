@@ -1,22 +1,32 @@
-*{
+* {
     margin: 0;
+    padding: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-body{
+body {
     font-family: 'Lato', sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
 
-.dados-dev{
+.dados-dev {
     display: flex;
     align-items: center;
     gap: 32px;
     align-self: stretch;
 }
 
-.card-dev{
+.card-dev {
     display: flex;
     width: 370px;
     height: 344px;
@@ -28,12 +38,14 @@ body{
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
 }
 
-.card-dev img{
+.card-dev img {
     width: 370px;
     height: 264px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 
-.card-dev .desc{
+.card-dev .desc {
     display: flex;
     padding: 16px;
     flex-direction: column;
@@ -42,20 +54,20 @@ body{
     align-self: stretch;
 }
 
-.name{
+.name {
     color: #495057;
     font-size: 24px;
     font-weight: 700;
     line-height: 100%; 
 }
 
-.titulo{
+.titulo {
     color: #6C757D;
     font-weight: 400;
     line-height: 100%;
 }
 
-.card-dados{
+.card-dados {
     display: flex;
     width: 769px;
     height: 344px;
@@ -67,10 +79,77 @@ body{
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
 }
 
-.card-dados .content{
+.card-dados .content {
     display: flex;
     padding: 16px;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+}
+
+.section-jobs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.h2-titulo {
+    display: flex;
+    padding-bottom: 16px;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    border-bottom: 1px solid #DEE2E6;
+}
+
+.card-job {
+    display: flex;
+    width: 270px;
+    min-height: 284px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card-content {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.card-content a {
+    color: #0D6EFD;
+}
+
+.card-job img {
+    width: 270px;
+    height: 164px;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.jobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px 26px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    padding: 32px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-top: 1px solid #DEE2E6;
 }
