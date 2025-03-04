@@ -346,8 +346,8 @@ header{
 
     .mobile-menu-icon {
         display: block;
+        margin-right: 10px;
         width: 40px;
-        height: auto;
         cursor: pointer;
     }
     
