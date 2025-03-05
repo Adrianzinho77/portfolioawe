@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E5E7EB;
+    background: #FFF;
+    padding: 16px 32px;
+    font-family: "Roboto", sans-serif;
+}
+
+header .fuctions{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header .inscricoes{
+    display: flex;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #F60;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out; 
+}
+
+header .inscricoes:hover {
+    background: #FD8535; 
+}
+
+header .user{
+    display: flex;
+    align-items: center;
+    gap:  16px;
+}
+
+header .user p{
+    color: #0F3679;
+    font-size: 16px;
+    font-weight: 700;
+}
+
