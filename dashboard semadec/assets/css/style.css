@@ -225,14 +225,13 @@ header .user p {
     font-weight: 400;
 }
 
-
 .quick-functions {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.quick-functions .quick-title{
+.quick-title{
     color: #494E57;
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -240,7 +239,7 @@ header .user p {
     gap: 4px;
 }
 
-.quick-functions .quick-title h2{ 
+.quick-title h2{ 
     font-size: 18px;
     font-weight: 700;
 }
@@ -295,33 +294,70 @@ header .user p {
     line-height: 140%; 
 }
 
+
+
+
 .content-section {
     display: flex;
-    margin-top: 20px;
+    align-items: flex-start;
+    gap: 24px;
 }
 
 .left-panel {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 15px;
-    width: 100%;
-}
-
-.left-panel h3 {
-    margin-bottom: 15px;
-}
-
-.inscricoes-list {
-    list-style: none;
-    margin-bottom: 20px;
-}
-
-.inscricoes-list li {
     display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
+    width: 466px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.inscricoes-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.inscricoes-list li{
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    overflow: hidden;
+    color: #494E57;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 2px;
+    border: 1px solid #DCEFF8;
+}
+
+.inscricoes-list li .name{
+    width: 140px;
+}
+
+.inscricoes-list .curso{
+    width: 60px;
+}
+
+.inscricoes-list li .name{
+    width: 120px;
+}
+
+
+
+
+
+
+.right-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
 }
 
 .chart {
@@ -350,6 +386,9 @@ header .user p {
 .bar3 {
     height: 50px;
 }
+
+
+
 
 .sidebar-right {
     width: 300px;
