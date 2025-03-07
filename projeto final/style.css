@@ -29,6 +29,10 @@ header{
     background: var(--Linear-Menu, linear-gradient(180deg, #014180 0%, #014D99 100%));
 }
 
+.logo-mobile{
+    display: none;
+}
+
 header .menu{
     display: flex;
     justify-content: center;
@@ -277,5 +281,56 @@ footer .logo-awe{
     flex-shrink: 0;
     align-self: stretch;
     border-top: 0.5px solid var(--ui-color-primary-light, #3A95E9);
+}
+
+@media (max-width: 568px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    header{
+        padding: 18px 24px;
+    }
+    .logo-desktop{
+        display: none;
+    }
+    .logo-mobile{
+        display: inline-block;
+        width: 80px;
+    }
+    main{
+        width: 100%;
+    }
+
+    .header-title h2{
+    font-size: 24px;
+    }
+    .skills .items-row{
+        overflow-x: scroll;
+    }
+    .skills .items-row .item {
+        padding: 6px 22px;
+    }
+
+    .membros{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .button{
+        width: 100%;
+    }
+
+    footer {
+        padding-top: 40px;
+      }
+      footer .content,
+      footer .content .bottom-info {
+        width: 100%;
+        padding: 0 16px;
+      }
 }
 
