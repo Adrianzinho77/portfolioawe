@@ -208,3 +208,74 @@ header .menu{
     font-style: italic;
     font-weight: 400;
 }
+
+footer{
+    display: flex;
+    height: 492px;
+    padding-top: 72px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    background: var(--linear-azul-2, linear-gradient(90deg, #213F8C 50%, #1E3980 69.17%, #1B3373 100%));
+    color: #fff;
+}
+
+footer .content{
+    display: flex;
+    width: 1120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+footer .content .title{
+    width: 406.848px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+footer .content .title span{
+    width: 406.848px;
+    color: #FFC82C;
+}
+
+footer .content .bottom-info{
+    display: flex;
+    width: 1120px;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+footer .content .bottom-info .title{
+    color: var(--White, #FAFAFA);
+    font-size: 18px;
+    font-weight: 100;
+}
+
+footer .content .bottom-info .text{
+    color: var(--White, #FAFAFA);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+footer .content .bottom-info .midias, .email, .endec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .logo-awe{
+    display: flex;
+    height: 88px;
+    padding: 24px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-top: 0.5px solid var(--ui-color-primary-light, #3A95E9);
+}
+
